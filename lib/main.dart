@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './screens/welcome_screen.dart';
+import './screens/quiz/quiz_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,11 +11,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Quiz App',
+      title: 'Quizzer',
       theme: ThemeData.dark(),
-      initialRoute: WelcomeScreen.id,
+      initialRoute: QuizScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
+        QuizScreen.id: (context) => QuizScreen(),
       },
     );
   }
